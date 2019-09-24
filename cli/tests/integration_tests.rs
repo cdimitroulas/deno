@@ -536,3 +536,8 @@ itest!(wasm_async {
   args: "wasm_async.js",
   output: "wasm_async.out",
 });
+
+itest!(top_level_await {
+  args: "--allow-read top_level_await.js",
+  output: "top_level_await.out",
+});
